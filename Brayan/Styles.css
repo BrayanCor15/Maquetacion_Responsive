@@ -1,8 +1,28 @@
 body{
     margin: 0;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue",Helvetica, Arial, sans-serif;
 }
 
-/* Diseño de barra navegación ================= */
+/* Diseño texto general ==================================== */
+.text_align{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    /* display: block; */
+    z-index: 9;
+}
+
+.a{
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+    display: flex;
+    justify-content:space-around;
+}
+
+
+/* Diseño de barra navegación ============================== */
 .nav{
     background: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(6px);
@@ -10,6 +30,7 @@ body{
 
 
     position: fixed;
+    top: 0;
 
     display: flex;
     justify-content: center;
@@ -18,7 +39,7 @@ body{
     padding: 15px;
     width: 100%;
 
-    z-index: 3;
+    z-index: 10;
 }
 
 .a_nav{
@@ -27,34 +48,352 @@ body{
     font-size: 13px;
 }
 
-
-/* Diseño de primera seccion - Principal ====== */
+/* Diseño de primera seccion - Celular ------------------- */
 .seccion_uno{
-    margin-top: 0px;
+    top: 0px;
+    position: absolute;
+
+    width: 100%;
+    height: 736px; 
+    
+    background: url(Imagenes/Web/principal.jpg);
+    background-size: 3008px;
+    background-position: center;   
+    background-repeat: no-repeat;
+
+    z-index: 8;
+} 
+
+.text_uno{
+    margin-top: 80px;
+}
+
+.text_uno_h2{
+    color: #ffffff;
+    font-size: 56px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: -25px;
+}
+
+.text_uno_h3{
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: 0px;
+}
+
+.text_uno_p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 15px 0 15px 0;
+}
+
+
+/* -- Diseño segunda seccion - Dos Celulares ---------------*/
+.text_dos{
+    margin-top: 570px;
+}
+
+.seccion_dos{
+    top: 730px;
     position: absolute;
 
     width: 100vw;
     height: 736px;
     
-    background: url(Imagenes/Web/principal.jpg);
+    background: url(Imagenes/Web/iphones14.jpg);
     background-size: 3008px;
     background-position: center;   
     
-    
-} 
+    z-index: 7;
+}
 
-.text{
-    text-align: center;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 80px 0px -30px 0px;
+.text_dos_h2{
+    font-size: 56px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: -25px;
+}
 
-    z-index: 2;
+.text_dos_h3{
+    font-size: 28px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: 0px;
+}
+
+.text_dos_p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 15px 0 15px 0;
 }
 
 
 
+/* -- Diseño tercera seccion - Reloj ------------------------*/
+.text_tres{
+    margin-top: 480px;
+}
 
+.seccion_tres{
+    top: 1300px;
+    position: absolute;
+
+    width: 100vw;
+    height: 736px;
+    
+    background: url(Imagenes/Web/relojnaranja.jpg);
+    background-size: 3008px;
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: 70%;
+    
+    z-index: 1;
+}
+
+.text_tres_h2{
+    font-size: 56px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: -25px;
+}
+
+.text_tres_h3_{
+    color: #e96315;
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: 0px;
+}
+
+.text_tres_h3{
+    font-size: 28px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0px 0 0px 0;
+}
+
+.text_tres_p{
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 10px 0 10px 0;
+}
+
+
+/* -- Diseño cuarta seccion - Cuatro Secciones ---------------*/
+.display{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* AirPods */
+.text_airpods{
+    margin-top: 250px;
+}
+
+.seccion_airpods{
+    top: 1900px;
+    left: 10px;
+    position: absolute;
+
+    width: calc(50% - 20px);
+    height: 550px;
+    
+    background: url(Imagenes/Web/airpods.jpg);
+    background-size: 3080px;
+    background-position: center;   
+    background-size: 350%;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+.text_airpods_h2{
+    color: rgb(255, 255, 255);
+    font-size: 52px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: -20px;
+}
+
+.text_airpods_h3{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: 0px;
+}
+
+.text_airpods_p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 15px 0 15px 0;
+}
+
+
+
+/* Reloj Mundo */
+.text_mundo{
+    margin-top: 250px;
+}
+
+.seccion_mundo{
+    top: 1900px;
+    right: 10px;
+    position: absolute;
+
+    width: calc(50% - 20px);
+    height: 550px;
+    
+    background: url(Imagenes/Web/relojmundo.jpg);
+    background-size: 3008px; 
+    background-position: center;  
+    background-size: 200%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+
+.text_mundo_h2{
+    color: rgb(255, 255, 255);
+    font-size: 52px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: -25px;
+}
+
+.text_mundo_h2_{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: -25px;
+}
+
+.text_mundo_h3{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: 0px;
+}
+
+.text_mundo_p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 15px 0 15px 0;
+}
+
+
+
+/* Relojes --------------------*/
+.text_relojes{
+    margin-top: 370px;
+}
+
+.seccion_relojes{
+    top: 2470px;
+    left: 10px;
+    position: absolute;
+
+    width: calc(50% - 20px);
+    height: 580px;
+    
+    background: url(Imagenes/Web/relojes.jpg);
+    background-position: center;  
+    background-size: 200%; 
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+
+.text_relojes_h2{
+    font-size: 52px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: -25px;
+}
+
+.text_relojes_h2_{
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: 0px;
+}
+
+.text_relojes_h3{
+    font-size: 23px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0px 0 0px 0;
+}
+
+.text_relojes_p{
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 20px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 10px 0 10px 0;
+}
+
+
+
+/* Celulares ------------------*/
+.text_celulares{
+    margin-top: 370px;
+}
+
+.seccion_celulares{
+    top: 2470px;
+    right: 10px;
+    position: absolute;
+
+    width: calc(50% - 20px);
+    height: 580px;
+    
+    background: url(Imagenes/Web/fitness.jpg);
+    /* background-size: 3008px; */
+    background-position: center;   
+    background-size: 210%;
+    background-repeat: no-repeat;
+    
+    z-index: 1;
+}
+
+.text_celulares_h2{
+    font-size: 52px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-bottom: 0;
+}
+
+.text_celulares_h3{
+    font-size: 23px;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0px 0 0px 0;
+}
+
+
+
+/* Diseño de ultima seccion ------------------------------- */
+.seccion_ult{
+    margin: 460px 180px 60px 180px;
+    font-size: 12px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ultima{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ultima_{
+    display: none;
+}
+
+.ult,a{
+    display: flex;
+    flex-direction: column;
+
+    line-height: 22px;
+
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+/* Diseño de pie de pagina ------------------------------- */
 footer{
     background: rgba(255, 255, 255, 0.9);
     font-size: 13px;
@@ -62,6 +401,7 @@ footer{
     color: rgba(0, 0, 0, 0.65);
 
     position: fixed;
+    padding: 10px;
 
     display: flex;
     justify-content: center;
@@ -70,5 +410,213 @@ footer{
 
     bottom:0;
 
-    z-index: 3;
+    z-index: 10;
+}
+
+
+
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Diseño responsivo ---------------------------- */
+@media (max-width: 870px) {
+
+    /* Diseño Nav ------------------------ */
+    .nav{
+        display: none;
+    }
+
+    .nav_R{
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        
+        position: fixed;
+        top: 0;
+
+        gap: 50px;
+
+        padding: 15px;
+        width: 100%;
+
+        z-index: 10;
+    }
+
+    .a_nav_R{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 13px;
+
+        align-items: center;
+
+        margin-top: -15px;
+    }
+
+    .a_nav_div{
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 13px;
+    }
+
+
+
+    /* Diseño Seccion uno ------------------------ */
+    .seccion_uno{
+        top: 0px;
+        position: absolute;
+
+        width: 100%;
+        height: 600px;
+
+        background: url(Imagenes/Phone/principalphone.jpg);
+        background-size: 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .text_uno {
+        margin-top: 52px;
+    }
+
+
+
+    /* Diseño Seccion dos ---------------------------- */
+    .text_dos {
+        margin-top: 430px;
+    }
+    .seccion_dos {
+        top: 550px;
+
+        width: 100%;
+        height: 600px;
+
+        background: url(Imagenes/Phone/iphones.jpg);
+        background-size: 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+    /* Diseño Seccion tres ---------------------------- */
+    .text_tres {
+        margin-top: 400px;
+    }
+    .seccion_tres{
+        margin-top: -190px;
+
+        width: 100%;
+        height: 600px;
+
+        background: url(Imagenes/Phone/relojnaranja.jpg);
+        background-size: 120%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+
+    /* Diseño Seccion tres ---------------------------- */
+    .display{
+        display: grid;
+    }
+
+    /* Airpods --- */
+    .text_airpods{
+        margin-top: 370px;
+    }
+    
+    .seccion_airpods{
+        top: 1730px;
+        left: 0;
+        position: absolute;
+    
+        width: 100%;
+        height: 500px;
+        
+        background: url(Imagenes/Phone/airpods.jpg);
+        background-position: center;   
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+
+    /* Reloj mundo --- */
+    .text_mundo{
+        margin-top: 360px;
+    }
+    
+    .seccion_mundo{
+        top: 2250px;
+        left: 0;
+        position: absolute;
+    
+        width: 100%;
+        height: 500px;
+        
+        background: url(Imagenes/Phone/relojmundo.jpg);
+        background-position: center;   
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+
+    /* Relojes --- */
+    .text_relojes{
+        margin-top: 350px;
+    }
+    
+    .seccion_relojes{
+        top: 2770px;
+        left: 0;
+        position: absolute;
+    
+        width: 100%;
+        height: 500px;
+        
+        background: url(Imagenes/Phone/relojes.jpg);
+        background-position: center;   
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+
+    /* Celulares --- */
+    .text_celulares{
+        margin-top: 350px;
+    }
+    
+    .seccion_celulares{
+        top: 3290px;
+        left: 0;
+        position: absolute;
+    
+        width: 100%;
+        height: 500px;
+        
+        background: url(Imagenes/Phone/fitness.jpg);
+        background-position: center;   
+        background-size: 110%;
+        background-repeat: no-repeat;
+    }
+
+
+
+    /* Diseño de ultima seccion ------------------------------- */
+    .seccion_ult{
+        margin: 350px 20px 80px 20px;
+    }
+
+    .ultima{
+        display: none;
+    }
+
+    .ultima_{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ult{
+        display: flex;
+    }
+
 }
